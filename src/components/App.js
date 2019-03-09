@@ -1,12 +1,15 @@
 import React, { Component} from 'react';
-
+import Example from './Example/Example';
+import {
+Switch, Route, 
+} from 'react-router';
 
 class App extends Component {
   render() {
     return (
-      <div className="container-fluid">
-        {this.props.children}
-      </div>
+      <Switch>
+      <Route exact path="/" component={Example} />
+    </Switch>
     );
   }
 }
