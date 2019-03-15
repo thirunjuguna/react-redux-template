@@ -12,7 +12,6 @@ import reducer from './reducers/index';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 
-
 import history from './utils/history';
 const middlewares = [thunk];
 
