@@ -1,0 +1,51 @@
+{
+    "env": {
+      "browser": true,
+      "builtin": true,
+      "jasmine": true,
+      "mocha": true,
+      "node": true
+    },
+    "root": true,
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaVersion": 2017,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["prettier"],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "rules": {
+      "prettier/prettier": ["error"],
+      "comma-dangle": 1,
+      "no-debugger": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx"]
+        }
+      ],
+      "react/no-array-index-key": 0,
+      "import/prefer-default-export": 0,
+      "max-len": [1, 80],
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "react/forbid-prop-types": 0,
+      "no-case-declarations": 0
+    }
+  }
+  

@@ -1,15 +1,15 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router';
 import Example from './Example/Example';
-import {
-Switch, Route, 
-} from 'react-router';
 
 class App extends Component {
+  componentWillMount() {}
+
   render() {
     return (
       <Switch>
-      <Route exact path="/" component={Example} />
-    </Switch>
+        <Route exact path="/" component={Example} />
+      </Switch>
     );
   }
 }
